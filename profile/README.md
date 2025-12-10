@@ -5,13 +5,13 @@
 <div align="center">
 
 [![Website](https://img.shields.io/badge/Web-Next.js%2016-000?logo=next.js)](https://github.com/e-letter/e-letter-web)
-[![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-desktop)
+[![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-dekstop)
 [![Mobile](https://img.shields.io/badge/Mobile-Android%20Java-3DDC84?logo=android)](https://github.com/e-letter/e-letter-android)
 
 | **Platform** | **Framework**    | **Language** | **Repository**                                                   |
 | ------------ | ---------------- | ------------ | ---------------------------------------------------------------- |
 | 🌐 Website   | Next.js 16       | TypeScript   | [e-letter-website](https://github.com/e-letter/e-letter-web)                 |
-| 🖥️ Desktop   | .NET 4.7.2 / WPF | C#           | [e-letter-desktop](https://github.com/e-letter/e-letter-desktop) |
+| 🖥️ Desktop   | .NET 4.7.2 / WPF | C#           | [e-letter-desktop](https://github.com/e-letter/e-letter-dekstop) |
 | 📱 Mobile    | Android          | Java         | [e-letter-android](https://github.com/e-letter/e-letter-android) |
 
 </div>
@@ -146,7 +146,7 @@ Debug > Start Debugging (F5)
 - **Teacher Registry** - Manage teacher information
 - **Check-in System** - Student and teacher attendance tracking
 
-👉 **[View Desktop Project](https://github.com/e-letter/e-letter-desktop)** | **[Documentation](https://github.com/e-letter/e-letter-desktop#readme)**
+👉 **[View Desktop Project](https://github.com/e-letter/e-letter-dekstop)** | **[Documentation](https://github.com/e-letter/e-letter-dekstop#readme)**
 
 ---
 
@@ -481,7 +481,7 @@ E-Letter Organization
 
 ### 📞 Support & Links
 
-[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-desktop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
+[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-dekstop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
 
 [Report Bug](https://github.com/e-letter/e-letter-web/issues) · [Request Feature](https://github.com/e-letter/e-letter-web/issues) · [Discussions](https://github.com/e-letter/e-letter-web/discussions)
 
