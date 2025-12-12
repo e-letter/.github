@@ -2,83 +2,77 @@
 
 > **Complete school permission letter management system** across web, desktop, and mobile platforms with modern interfaces, seamless user experience, and comprehensive letter tracking.
 
-<div align="center">
-
 [![Website](https://img.shields.io/badge/Web-Next.js%2016-000?logo=next.js)](https://github.com/e-letter/e-letter-web)
-[![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-dekstop)
+[![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-desktop)
 [![Mobile](https://img.shields.io/badge/Mobile-Android%20Java-3DDC84?logo=android)](https://github.com/e-letter/e-letter-android)
 
-| **Platform** | **Framework**    | **Language** | **Repository**                                                   |
-| ------------ | ---------------- | ------------ | ---------------------------------------------------------------- |
-| 🌐 Website   | Next.js 16       | TypeScript   | [e-letter-website](https://github.com/e-letter/e-letter-web)                 |
-| 🖥️ Desktop   | .NET 4.7.2 / WPF | C#           | [e-letter-desktop](https://github.com/e-letter/e-letter-dekstop) |
-| 📱 Mobile    | Android          | Java         | [e-letter-android](https://github.com/e-letter/e-letter-android) |
+## 📊 Platform Overview
 
-</div>
+| Platform   | Framework                 | Language   | Key Features                                           | Repository                                                       |
+| ---------- | ------------------------- | ---------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
+| 🌐 Web     | Next.js 16 + Tailwind CSS | TypeScript | Real-time tracking, Multi-stage approval, Beautiful UI | [e-letter-web](https://github.com/e-letter/e-letter-web)         |
+| 🖥️ Desktop | .NET 4.7.2 + WPF          | C#         | Offline support, Local storage, Native Windows         | [e-letter-desktop](https://github.com/e-letter/e-letter-desktop) |
+| 📱 Mobile  | Android 11+               | Java       | Mobile-optimized, Push notifications, Biometric auth   | [e-letter-android](https://github.com/e-letter/e-letter-android) |
 
 ---
 
 ## 🎯 About E-Letter
 
-E-Letter is a comprehensive **school permission letter management system** designed to streamline the process of managing student permission requests. The system provides:
+E-Letter is a comprehensive **school permission letter management system** designed to streamline managing student permission requests across multiple platforms.
 
-- **Multi-Platform Access** - Web, Desktop, and Mobile applications
-- **Role-Based Management** - Students, Teachers, and Administrators with tailored dashboards
-- **Real-Time Tracking** - Live status updates on permission requests
-- **Beautiful UI** - Modern, gradient-based interfaces across all platforms
-- **Secure Authentication** - Role-based access control and JWT authentication
+### Core Capabilities
+
+- **Multi-Platform Access** - Web, Desktop, and Mobile with unified workflows
+- **Role-Based Access Control** - Students, Teachers, and Administrators with tailored dashboards
+- **Real-Time Tracking** - Live status updates on permission requests (web & mobile)
+- **Multi-Stage Approval Workflow** - Complete letter routing with digital signatures
+- **Secure Authentication** - JWT tokens (web), session-based (desktop/mobile)
+- **Beautiful Modern UI** - Consistent gradient design system across all platforms
 - **Complete Audit Trail** - Comprehensive history and logging of all actions
 
-### Supported Permission Types
+### Permission Types
 
-| Type                 | Code        | Description                                               | Use Case                            |
-| -------------------- | ----------- | --------------------------------------------------------- | ----------------------------------- |
-| **Entry Permission** | Izin Masuk  | Permission for late arrival or after-absence entry        | Student arrives late to school      |
-| **Exit Permission**  | Izin Keluar | Permission to leave school premises during school hours   | Student needs to leave early        |
-| **Dispensation**     | Dispensasi  | Special exemptions from school activities or requirements | Medical reasons, family emergencies |
+| Type         | Code | Color     | Description                        | Use Case                       |
+| ------------ | ---- | --------- | ---------------------------------- | ------------------------------ |
+| Entry        | IM   | 🔵 Purple | Late arrival or post-absence entry | Student arrives late to school |
+| Exit         | IK   | 🟠 Orange | Early departure permission         | Student needs to leave early   |
+| Dispensation | DISP | 🟡 Yellow | Special exemptions/exclusions      | Medical/family emergencies     |
 
 ---
 
 ## 🌐 Web Application
 
-> A modern, interactive web application for managing school permission letters with a beautiful UI and seamless user experience.
+A modern, interactive web application for managing school permission letters with beautiful UI and seamless user experience.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
 [![MariaDB](https://img.shields.io/badge/MariaDB-11.5-003545?logo=mariadb)](https://mariadb.org/)
 
-### ✨ Key Features
+### Web Features
 
-- **Beautiful Modern UI** - Gradient design system with glassmorphism effects
-- **Role-Based Access** - Student Portal, Teacher Dashboard, Admin Panel
-- **Real-Time Tracking** - Live status updates on permission requests
-- **Multi-Stage Approval** - Workflow with student, teacher, and disciplinary signatures
-- **JWT Authentication** - Secure token-based authentication with refresh tokens
-- **Fully Responsive** - Works perfectly on all devices
+- **Gradient Design System** - Custom purple, orange, yellow, and blue themes with glassmorphism
+- **Smooth Animations** - Framer Motion powered transitions and micro-interactions
+- **Responsive Design** - Fully responsive across all devices
+- **Role-Based Dashboards** - Student Portal, Teacher Dashboard, Admin Panel
+- **Real-Time Status Tracking** - Live approval progress updates
+- **Multi-Stage Approval** - Complete workflow with audit trails
+- **Digital Signatures** - Canvas-based signature capture
+- **JWT Authentication** - Secure token-based with refresh tokens
 - **Docker Ready** - One-command deployment
 
-### 🚀 Quick Start
+### Web Quick Start
 
 ```bash
-# Clone repository
 git clone https://github.com/e-letter/e-letter-web.git
 cd e-letter-web
-
-# Install dependencies
 bun install
-
-# Set up environment
 cp .env.example .env.local
-
-# Start database
 docker-compose up -d
-
-# Run development server
 bun dev
 ```
 
-### 🏗️ Tech Stack
+### Web Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript 5
@@ -88,183 +82,182 @@ bun dev
 - **Authentication**: JWT with access/refresh tokens
 - **Deployment**: Docker & Docker Compose
 
-👉 **[View Web Project](https://github.com/e-letter/e-letter-web.git)** | **[Documentation](https://github.com/e-letter/e-letter-web#readme)**
+### Web Database Architecture
+
+The database uses **5 logical sections**:
+
+1. **Reference Tables** - Roles, majors, classes, permission types
+2. **User Management** - Users, profiles, authentication tokens
+3. **Permission System** - Requests, approval stages, approval logs
+4. **Supporting Data** - Dispensations, attachments, letter sequences
+5. **Audit & Logging** - Login logs, system audit trails
+
+Key tables: `users`, `permission_requests`, `approval_stages`, `permission_approval_logs`, `dispensation_students`
+
+👉 [View Web Project](https://github.com/e-letter/e-letter-web) | [Documentation](https://github.com/e-letter/e-letter-web#readme)
 
 ---
 
 ## 🖥️ Desktop Application
 
-> A powerful desktop application for managing school permission letters with a modern WPF interface and seamless user experience.
+A powerful desktop application for managing school permission letters with modern WPF interface and seamless user experience.
 
 [![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?logo=dot-net)](https://dotnet.microsoft.com/download/dotnet-framework)
 [![WPF](https://img.shields.io/badge/WPF-UI%204.1-0078D4?logo=windows)](https://github.com/lepoco/wpfui)
-[![C#](https://img.shields.io/badge/C%23-Modern-239120?logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![C#](https://img.shields.io/badge/C%23-10.0-239120?logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
-### ✨ Key Features
+### Desktop Features
 
-- **Role-Based Access** - Student Portal, Teacher Dashboard, Administrator Panel
-- **Permission Management** - Create, track, and manage permission letters
-- **Intuitive Interfaces** - Clean, user-friendly Windows desktop application
-- **Letter Tracking** - Real-time status of all permission requests
+- **Modern WPF Design** - Custom gradient themes with smooth transitions
+- **Intuitive Navigation** - Easy-to-use menu system for all user roles
+- **Professional Styling** - WPF-UI framework with custom controls
+- **Role-Based Access** - Student, Teacher, and Administrator portals
+- **Permission Management** - Create, track, and manage all letter types
+- **Letter Tracking** - Real-time status of permission requests
 - **Comprehensive History** - Complete audit trail of all actions
 - **Local Storage** - Secure JSON-based data persistence
-- **Modern UI** - WPF with custom styling and smooth animations
+- **Windows Native** - .NET Framework 4.7.2 compatibility
 
-### 🚀 Quick Start
+### Desktop Quick Start
 
 ```bash
-# Clone repository
 git clone https://github.com/e-letter/e-letter-desktop.git
 cd e-letter-desktop
-
-# Open in Visual Studio 2019+
 start e-letter.sln
-
-# Build solution
-Build > Build Solution (Ctrl+Shift+B)
-
-# Run application
-Debug > Start Debugging (F5)
+# Build > Build Solution (Ctrl+Shift+B)
+# Debug > Start Debugging (F5)
 ```
 
-### 🏗️ Tech Stack
+### Desktop Tech Stack
 
-- **Platform**: Windows Desktop
-- **Framework**: .NET Framework 4.7.2
+- **Platform**: Windows Desktop (.NET Framework 4.7.2)
 - **Language**: C# 10.0
 - **UI Framework**: WPF (Windows Presentation Foundation)
 - **UI Library**: WPF-UI 4.1
+- **Serialization**: Newtonsoft.Json 13.0.4
 - **Data Format**: JSON with local storage
-- **Dependencies**: Newtonsoft.Json, System libraries
 
-### 📋 Supported Views
+### Desktop Supported Views
 
-- **Home Screen** - Dashboard and navigation menu
-- **Permission Forms** - Create entry and exit letters
-- **Letter Tracking** - View and manage all letters
-- **Student Registry** - Manage student information
-- **Teacher Registry** - Manage teacher information
-- **Check-in System** - Student and teacher attendance tracking
+- Home Screen - Dashboard and navigation menu
+- Permission Forms - Create entry and exit letters
+- Letter Tracking - View and manage all letters
+- Student Registry - Manage student information
+- Teacher Registry - Manage teacher information
+- Check-in System - Student and teacher attendance tracking
+- Dispensation Management - Special permission handling
 
-👉 **[View Desktop Project](https://github.com/e-letter/e-letter-dekstop)** | **[Documentation](https://github.com/e-letter/e-letter-dekstop#readme)**
+👉 [View Desktop Project](https://github.com/e-letter/e-letter-desktop) | [Documentation](https://github.com/e-letter/e-letter-desktop#readme)
 
 ---
 
-## 📱 Mobile Application (Android)
+## 📱 Mobile Application
 
-> A powerful Android application for managing school permission letters with native mobile interface and seamless user experience.
+A powerful Android application for managing school permission letters with native mobile interface and seamless user experience.
 
-[![Android](https://img.shields.io/badge/Android-11+-3DDC84?logo=android)](https://www.android.com/)
+[![Android](https://img.shields.io/badge/Android-8+-3DDC84?logo=android)](https://www.android.com/)
 [![Java](https://img.shields.io/badge/Java-17+-007396?logo=java)](https://www.oracle.com/java/)
 [![Material Design](https://img.shields.io/badge/Material%20Design-3-757575?logo=material-design)](https://material.io/)
 
-### ✨ Key Features
+### Mobile Features
 
-- **Role-Based Access** - Student App, Teacher App, with different dashboards
-- **Permission Management** - Create, submit, and track permission letters on-the-go
-- **Mobile-Optimized UI** - Material Design 3 interface optimized for mobile devices
+- **Material Design 3** - Modern, intuitive interface optimized for mobile
+- **Role-Based Access** - Student App and Teacher App with different dashboards
+- **Permission Management** - Create, submit, and track letters on-the-go
 - **Real-Time Notifications** - Push notifications for approval status updates
-- **Offline Support** - Basic functionality available even without internet
+- **Offline Support** - Basic functionality available without internet
 - **Biometric Authentication** - Support for fingerprint and face recognition
-- **Letter Tracking** - Track all submitted letters with real-time status updates
+- **Letter Tracking** - Track submitted letters with real-time status
 - **Responsive Design** - Perfect display on phones and tablets
 
-### 🚀 Quick Start
+### Mobile Quick Start
 
 ```bash
-# Clone repository
 git clone https://github.com/e-letter/e-letter-android.git
 cd e-letter-android
-
-# Open in Android Studio
 start .
-
-# Sync Gradle dependencies
-File > Sync Now
-
-# Run on emulator or device
-Run > Run 'app'
+# File > Sync Now
+# Run > Run 'app'
 ```
 
-### 🏗️ Tech Stack
+### Mobile Tech Stack
 
-- **Platform**: Android 11+
+- **Platform**: Android 8+
 - **Language**: Java 17+
 - **UI Framework**: Android Jetpack with Material Design 3
 - **Database**: Room Database (local persistence)
 - **Networking**: Retrofit2 for API communication
 - **Authentication**: JWT with SharedPreferences
-- **Dependencies**: Material Design, OkHttp, GSON
 
-### 📋 Key Screens
+### Mobile Key Screens
 
-- **Welcome/Login** - Authentication screen with role selection
-- **Student Dashboard** - Home, create letter, view letters, tracking
-- **Teacher Dashboard** - Home, review requests, manage approvals
-- **Permission Forms** - Create entry/exit letters with form validation
-- **Letter History** - View all submitted letters with detailed information
-- **Profile Management** - User profile and settings management
-- **Notifications** - Real-time updates on letter approvals
+- Welcome/Login - Authentication with role selection
+- Student Dashboard - Home, create letter, view letters, tracking
+- Teacher Dashboard - Home, review requests, manage approvals
+- Permission Forms - Create letters with form validation
+- Letter History - View all submitted letters
+- Profile Management - User profile and settings
+- Notifications - Real-time approval updates
 
-👉 **[View Mobile Project](https://github.com/e-letter/e-letter-android)** | **[Documentation](https://github.com/e-letter/e-letter-android#readme)**
+👉 [View Mobile Project](https://github.com/e-letter/e-letter-android) | [Documentation](https://github.com/e-letter/e-letter-android#readme)
 
 ---
 
-## 🔄 Workflow Across Platforms
+## 🔄 User Workflows
 
-### For Students
+### Student Workflow
 
-```!/bin/bash
+```text
 Register/Login
     ↓
-Select Permission Type (Entry/Exit/Dispensation)
+Select Permission Type
     ↓
 Fill Permission Form
     ↓
 Submit Request
     ↓
-Track Approval Status (Real-time)
+Track Approval Status
     ↓
 Receive Approval/Rejection
 ```
 
 **Available on**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
 
-### For Teachers
+### Teacher Workflow
 
-```!/bin/bash
+```text
 Login
     ↓
 View Pending Requests
     ↓
 Review Student Information
     ↓
-Approve/Reject/Request More Info
+Approve/Reject/Request Info
     ↓
-Add Comments
+Add Comments & Signatures
     ↓
 Notify Student of Decision
 ```
 
 **Available on**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
 
-### For Administrators
+### Administrator Workflow
 
-```!/bin/bash
+```text
 Login
     ↓
-Manage Users (Students/Teachers)
+Manage Users
     ↓
-Configure Approval Workflows
+Configure Workflows
     ↓
 View System Reports
     ↓
 Monitor Audit Logs
     ↓
-Maintain System Settings
+Maintain Settings
 ```
 
-**Available on**: 🌐 Website | 🖥️ Desktop
+**Available on**: 🌐 Web | 🖥️ Desktop
 
 ---
 
@@ -273,57 +266,85 @@ Maintain System Settings
 ### Common Security Features
 
 - **Role-Based Access Control** - Fine-grained permission management
-- **Secure Password Storage** - bcryptjs hashing (Website), secure storage (Desktop/Mobile)
+- **Secure Password Storage** - bcryptjs hashing (Web), secure storage (Desktop/Mobile)
 - **Session Management** - Secure session creation and tracking
 - **Audit Logging** - Complete history of all actions
-- **Token-Based Authentication** - JWT for website, session tokens for desktop/mobile
+- **Token-Based Authentication** - JWT for web, session tokens for desktop/mobile
 
 ### Platform-Specific Security
 
-| Feature               | Website | Desktop | Mobile |
-| --------------------- | ------- | ------- | ------ |
-| JWT Authentication    | ✅      | -       | -      |
-| Refresh Tokens        | ✅      | -       | -      |
-| Local Session Storage | ✅      | ✅      | -      |
-| Biometric Auth        | -       | -       | -      |
-| HTTPS Only            | ✅      | -       | -      |
-| Encrypted Preferences | -       | -       | -      |
+| Feature               | Web | Desktop | Mobile |
+| --------------------- | --- | ------- | ------ |
+| JWT Authentication    | ✅  | ✅       | -      |
+| Refresh Tokens        | ✅  | ✅      | -      |
+| Local Session Storage | ✅  | ✅      | -      |
+| HTTPS Only            | ✅  | -       | -      |
+| Encrypted Preferences | -   | -       | -      |
+
+### User Role Hierarchy
+
+```text
+ADMIN
+├── Full system access
+├── Manage users & permissions
+└── View all reports
+
+KEPSEK (Principal)
+├── Final approval authority
+├── View institution statistics
+└── Override approval stages
+
+GURU_KESISWAAN (Discipline Teacher)
+├── Review student requests
+├── Approve/reject letters
+└── Add digital signatures
+
+GURU_MAPEL (Subject Teacher)
+├── Review assigned student requests
+├── Approve/forward to higher role
+└── Manage class activities
+
+SISWA (Student)
+├── Submit permission requests
+├── Track request status
+└── View approval comments
+```
 
 ---
 
 ## 📊 Features Comparison
 
-| Feature                   | Website | Desktop | Mobile  |
-| ------------------------- | ------- | ------- | ------- |
-| Create Permission Letters | ✅      | ✅      | ✅      |
-| Track Letter Status       | ✅      | ✅      | ✅      |
-| Teacher Review/Approval   | ✅      | ✅      | ✅      |
-| Admin Management          | ✅      | ✅      | -       |
-| Real-Time Updates         | ✅      | -       | ✅      |
-| Beautiful UI              | ✅      | ✅      | ✅      |
-| Offline Support           | -       | ✅      | Partial |
-| Mobile Optimized          | ✅      | -       | ✅      |
-| Export Reports            | ✅      | ✅      | -       |
-| Database Persistence      | ✅      | ✅      | ✅      |
+| Feature                   | Web | Desktop | Mobile  |
+| ------------------------- | --- | ------- | ------- |
+| Create Permission Letters | ✅  | ✅      | ✅      |
+| Track Letter Status       | ✅  | ✅      | ✅      |
+| Teacher Review/Approval   | ✅  | ✅      | ✅      |
+| Admin Management          | ✅  | ✅      | -       |
+| Real-Time Updates         | ✅  | -       | ✅      |
+| Beautiful UI              | ✅  | ✅      | ✅      |
+| Offline Support           | -   | ✅      | Partial |
+| Mobile Optimized          | ✅  | -       | ✅      |
+| Export Reports            | ✅  | ✅      | -       |
+| Database Persistence      | ✅  | ✅      | ✅      |
 
 ---
 
 ## 🎨 Design System
 
-All platforms follow a consistent, modern design language:
+All platforms follow a consistent, modern design language.
 
 ### Color Palette
 
-| Permission Type        | Primary Color | Gradient            |
-| ---------------------- | ------------- | ------------------- |
-| **Entry (Izin Masuk)** | Purple        | `#C471ED → #F64F59` |
-| **Exit (Izin Keluar)** | Orange        | `#FDC830 → #F37335` |
-| **Dispensation**       | Blue          | `#2193b0 → #6dd5ed` |
+| Permission Type    | Primary Color | Gradient            |
+| ------------------ | ------------- | ------------------- |
+| Entry (Izin Masuk) | Purple        | `#C471ED → #F64F59` |
+| Exit (Izin Keluar) | Orange        | `#FDC830 → #F37335` |
+| Dispensation       | Blue          | `#2193b0 → #6dd5ed` |
 
 ### Typography
 
-- **Body Text**: Nunito (Website), System (Desktop/Mobile)
-- **Headings**: Quicksand (Website), Segoe UI (Desktop), Roboto (Mobile)
+- **Body Text**: Nunito (Web), System (Desktop/Mobile)
+- **Headings**: Quicksand (Web), Segoe UI (Desktop), Roboto (Mobile)
 
 ### Component Patterns
 
@@ -340,59 +361,65 @@ All platforms follow a consistent, modern design language:
 
 **🌐 Building the Web App?**
 
-- Go to [e-letter-web](https://github.com/e-letter/e-letter-web.git)
+Go to [e-letter-web](https://github.com/e-letter/e-letter-web)
+
 - Tech: Next.js 16, TypeScript, Tailwind CSS, MariaDB
+- [Quick Start Guide](https://github.com/e-letter/e-letter-web#readme)
 
 **🖥️ Building the Desktop App?**
 
-- Go to [e-letter-desktop](https://github.com/e-letter/e-letter-desktop)
+Go to [e-letter-desktop](https://github.com/e-letter/e-letter-desktop)
+
 - Tech: .NET 4.7.2, C#, WPF
+- [Quick Start Guide](https://github.com/e-letter/e-letter-desktop#readme)
 
 **📱 Building the Mobile App?**
 
-- Go to [e-letter-android](https://github.com/e-letter/e-letter-android)
+Go to [e-letter-android](https://github.com/e-letter/e-letter-android)
+
 - Tech: Android, Java, Material Design 3
+- [Quick Start Guide](https://github.com/e-letter/e-letter-android#readme)
 
 ### Development Workflow
 
-1. **Choose a Repository** above
-2. **Clone the Repository**
-3. **Install Dependencies**
-4. **Configure Environment** (API endpoints, database, etc.)
-5. **Run Development Server**
-6. **Start Contributing!**
+1. Choose a repository above
+2. Clone the repository
+3. Install dependencies
+4. Configure environment
+5. Run development server
+6. Start contributing!
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions across all platforms! Please follow these guidelines:
+Contributions are welcome across all platforms! Please follow these guidelines:
 
-1. **Fork** the repository of your choice
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Make** your changes following code style guidelines
-4. **Test** thoroughly on your target platform
-5. **Commit** with clear, descriptive messages
-6. **Push** to your fork
-7. **Open** a Pull Request
+1. Fork the repository of your choice
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Make your changes following code style guidelines
+4. Test thoroughly on your target platform
+5. Commit with clear, descriptive messages
+6. Push to your fork
+7. Open a Pull Request
 
 ### Code Style Guidelines
 
-**Web (TypeScript/React)**
+#### TypeScript/React (Web)
 
 - Use TypeScript for type safety
 - Follow existing component patterns
 - Use Tailwind CSS utilities
 - Add comments for complex logic
 
-**Desktop (C#)**
+#### C# (Desktop)
 
 - Use PascalCase for classes and methods
 - Keep methods small and focused
 - Add meaningful comments
 - Follow existing UI patterns
 
-**Mobile (Java)**
+#### Java (Mobile)
 
 - Use consistent naming conventions
 - Add proper error handling
@@ -422,7 +449,7 @@ Prohibited without explicit permission:
 
 ## 🏢 Organization Structure
 
-```
+```text
 E-Letter Organization
 │
 ├── 🌐 e-letter-web (Website)
@@ -450,20 +477,20 @@ E-Letter Organization
 
 ### Built With
 
-**Web**
+#### Web
 
 - [Next.js](https://nextjs.org/) - React framework
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 - [shadcn/ui](https://ui.shadcn.com/) - UI components
 
-**Desktop**
+#### Desktop
 
 - [WPF-UI](https://github.com/lepoco/wpfui) - Modern WPF controls
 - [Newtonsoft.Json](https://www.newtonsoft.com/json) - JSON serialization
 - [.NET Framework](https://dotnet.microsoft.com/) - Runtime
 
-**Mobile**
+#### Mobile
 
 - [Android Jetpack](https://developer.android.com/jetpack) - Framework
 - [Material Design 3](https://material.io/) - Design system
@@ -477,16 +504,12 @@ E-Letter Organization
 
 ---
 
-<div align="center">
+## 📞 Support & Links
 
-### 📞 Support & Links
-
-[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-dekstop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
+[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-desktop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
 
 [Report Bug](https://github.com/e-letter/e-letter-web/issues) · [Request Feature](https://github.com/e-letter/e-letter-web/issues) · [Discussions](https://github.com/e-letter/e-letter-web/discussions)
 
 ---
 
-_Simplifying school permission letter management across all platforms_
-
-</div>
+Simplifying school permission letter management across all platforms
