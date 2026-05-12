@@ -1,6 +1,6 @@
 # E-Letter Organization 📝
 
-> **Complete school permission letter management system** across web, desktop, and mobile platforms with modern interfaces, seamless user experience, and comprehensive letter tracking.
+> **Sistem manajemen surat izin sekolah yang lengkap** di seluruh platform web, desktop, dan mobile dengan antarmuka modern, pengalaman pengguna yang mulus, dan pelacakan surat yang komprehensif.
 
 [![Website](https://img.shields.io/badge/Web-Next.js%2016-000?logo=next.js)](https://github.com/e-letter/e-letter-web)
 [![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-desktop)
@@ -9,70 +9,70 @@
 
 ---
 
-## 📊 Platform Overview
+## 📊 Ringkasan Platform
 
-| Platform   | Framework                 | Language   | Key Features                                           | Repository                                                       |
-| ---------- | ------------------------- | ---------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
-| 🌐 Web     | Next.js 16 + Tailwind CSS | TypeScript | Real-time tracking, Multi-stage approval, Beautiful UI | [e-letter-web](https://github.com/e-letter/e-letter-web)         |
-| 🖥️ Desktop | .NET 4.7.2 + WPF          | C#         | Offline support, Local storage, Native Windows         | [e-letter-desktop](https://github.com/e-letter/e-letter-desktop) |
-| 📱 Mobile  | Android 14+ / Kotlin      | Kotlin     | Mobile-optimized, Push notifications, Biometric auth   | [e-letter-android](https://github.com/e-letter/e-letter-android) |
-
----
-
-## 🎯 About E-Letter
-
-E-Letter is a comprehensive **school permission letter management system** designed to streamline managing student permission requests across multiple platforms. Built with a dual-backend architecture (Go API + Next.js frontend) and native platform clients, it delivers a consistent experience across Web, Desktop, and Mobile.
-
-### Core Capabilities
-
-- **Multi-Platform Access** - Web, Desktop, and Mobile with unified workflows
-- **Role-Based Access Control** - Students, Teachers, Principals, and Administrators with tailored dashboards
-- **Real-Time Tracking** - Live status updates on permission requests (web & mobile)
-- **Multi-Stage Approval Workflow** - Complete letter routing with digital signatures
-- **Secure Authentication** - JWT tokens (web), session-based (desktop/mobile)
-- **Beautiful Modern UI** - Consistent gradient design system across all platforms
-- **Complete Audit Trail** - Comprehensive history and logging of all actions
-
-### Permission Types
-
-| Type         | Code | Color     | Description                        | Use Case                       |
-| ------------ | ---- | --------- | ---------------------------------- | ------------------------------ |
-| Entry        | IM   | 🔵 Purple | Late arrival or post-absence entry | Student arrives late to school |
-| Exit         | IK   | 🟠 Orange | Early departure permission         | Student needs to leave early   |
-| Dispensation | DISP | 🟡 Yellow | Special exemptions/exclusions      | Medical/family emergencies     |
+| Platform   | Framework                 | Bahasa     | Fitur Utama                                                | Repository                                                       |
+| ---------- | ------------------------- | ---------- | ---------------------------------------------------------- | ---------------------------------------------------------------- |
+| 🌐 Web     | Next.js 16 + Tailwind CSS | TypeScript | Pelacakan real-time, Persetujuan multi-tahap, UI indah     | [e-letter-web](https://github.com/e-letter/e-letter-web)         |
+| 🖥️ Desktop | .NET 4.7.2 + WPF          | C#         | Dukungan offline, Penyimpanan lokal, Windows native        | [e-letter-desktop](https://github.com/e-letter/e-letter-desktop) |
+| 📱 Mobile  | Android 14+ / Kotlin      | Kotlin     | Dioptimalkan untuk mobile, Notifikasi push, Auth biometrik | [e-letter-android](https://github.com/e-letter/e-letter-android) |
 
 ---
 
-## 🌐 Web Application
+## 🎯 Tentang E-Letter
 
-A modern, interactive web application for managing school permission letters with beautiful UI and seamless user experience. Built with Next.js 16 App Router, TypeScript, and a Go-powered backend API.
+E-Letter adalah **sistem manajemen surat izin sekolah** yang komprehensif, dirancang untuk menyederhanakan pengelolaan permintaan izin siswa di berbagai platform. Dibangun dengan arsitektur dual-backend (API Go + frontend Next.js) dan klien platform native, E-Letter menyediakan pengalaman yang konsisten di Web, Desktop, dan Mobile.
 
-### Web Features
+### Kemampuan Inti
 
-- **Gradient Design System** - Custom purple, orange, yellow, and blue themes with glassmorphism
-- **Smooth Animations** - Framer Motion powered transitions and micro-interactions
-- **Responsive Design** - Fully responsive across all devices
-- **Role-Based Dashboards** - Student Portal, Teacher Dashboard, Admin Panel
-- **Real-Time Status Tracking** - Live approval progress updates
-- **Multi-Stage Approval** - Complete workflow with audit trails
-- **Digital Signatures** - Canvas-based signature capture
-- **JWT Authentication** - Secure token-based with refresh tokens
-- **Docker Ready** - One-command deployment
+- **Akses Multi-Platform** - Web, Desktop, dan Mobile dengan alur kerja yang terpadu
+- **Kontrol Akses Berbasis Peran** - Siswa, Guru, Kepala Sekolah, dan Administrator dengan dasbor yang disesuaikan
+- **Pelacakan Real-Time** - Pembaruan status langsung pada permintaan izin (web & mobile)
+- **Alur Persetujuan Multi-Tahap** - Perutean surat lengkap dengan tanda tangan digital
+- **Autentikasi Aman** - Token JWT (web), sesi berbasis token (desktop/mobile)
+- **UI Modern yang Indah** - Sistem desain gradien yang konsisten di semua platform
+- **Lacak Audit Lengkap** - Riwayat dan pencatatan lengkap semua tindakan
 
-### Web Tech Stack
+### Jenis Izin
 
-| Component      | Technology                     |
+| Jenis       | Kode | Warna     | Deskripsi                                     | Penggunaan                        |
+| ----------- | ---- | --------- | --------------------------------------------- | --------------------------------- |
+| Izin Masuk  | IM   | 🔵 Ungu   | Kedatangan terlambat atau masuk setelah absen | Siswa datang terlambat ke sekolah |
+| Izin Keluar | IK   | 🟠 Oranye | Izin pulang lebih awal                        | Siswa perlu pulang lebih awal     |
+| Dispensasi  | DISP | 🟡 Kuning | Pengecualian khusus                           | Keadaan darurat medis/keluarga    |
+
+---
+
+## 🌐 Aplikasi Web
+
+Aplikasi web modern dan interaktif untuk mengelola surat izin sekolah dengan UI yang indah dan pengalaman pengguna yang mulus. Dibangun dengan Next.js 16 App Router, TypeScript, dan backend API berbasis Go.
+
+### Fitur Web
+
+- **Sistem Desain Gradien** - Tema ungu, oranye, kuning, dan biru khusus dengan efek glassmorphism
+- **Animasi Halus** - Transisi dan mikro-interaksi yang didukung oleh Framer Motion
+- **Desain Responsif** - Sepenuhnya responsif di semua perangkat
+- **Dasbor Berbasis Peran** - Portal Siswa, Dasbor Guru, Panel Admin
+- **Pelacakan Status Real-Time** - Pembaruan proses persetujuan secara langsung
+- **Persetujuan Multi-Tahap** - Alur kerja lengkap dengan jejak audit
+- **Tanda Tangan Digital** - Penangkapan tanda tangan berbasis canvas
+- **Autentikasi JWT** - Token-based yang aman dengan token refresh
+- **Siap Docker** - Deploy dengan satu perintah
+
+### Tumpukan Teknologi Web
+
+| Komponen       | Teknologi                      |
 | -------------- | ------------------------------ |
 | **Framework**  | Next.js 16 (App Router)        |
-| **Language**   | TypeScript 5.0                 |
-| **Styling**    | Tailwind CSS 4 + Framer Motion |
-| **UI Library** | shadcn/ui components           |
+| **Bahasa**     | TypeScript 5.0                 |
+| **Gaya**       | Tailwind CSS 4 + Framer Motion |
+| **Pustaka UI** | Komponen shadcn/ui             |
 | **Database**   | MariaDB 11.5                   |
-| **Backend**    | Go 1.22 + Gin framework        |
-| **Auth**       | JWT with access/refresh tokens |
+| **Backend**    | Go 1.22 + framework Gin        |
+| **Auth**       | JWT dengan token akses/refresh |
 | **Deploy**     | Docker & Docker Compose        |
 
-### Web Quick Start
+### Mulai Cepat (Web)
 
 ```bash
 git clone https://github.com/e-letter/e-letter-web.git
@@ -83,248 +83,248 @@ docker-compose up -d
 bun dev
 ```
 
-### Web Database Architecture
+### Arsitektur Database Web
 
-The web database uses **5 logical sections**:
+Database web menggunakan **5 bagian logis**:
 
-1. **Reference Tables** - Roles, majors, classes, permission types
-2. **User Management** - Users, profiles, authentication tokens
-3. **Permission System** - Requests, approval stages, approval logs
-4. **Supporting Data** - Dispensations, attachments, letter sequences
-5. **Audit & Logging** - Login logs, system audit trails
+1. **Tabel Referensi** - Peran, jurusan, kelas, jenis izin
+2. **Manajemen Pengguna** - Pengguna, profil, token autentikasi
+3. **Sistem Izin** - Permintaan, tahapan persetujuan, log persetujuan
+4. **Data Pendukung** - Dispensasi, lampiran, urutan surat
+5. **Audit & Pencatatan** - Log masuk, jejak audit sistem
 
-Key tables: `users`, `permission_requests`, `approval_stages`, `permission_approval_logs`, `dispensation_students`
+Tabel kunci: `users`, `permission_requests`, `approval_stages`, `permission_approval_logs`, `dispensation_students`
 
-👉 [View Web Project](https://github.com/e-letter/e-letter-web) | [Full Documentation](https://github.com/e-letter/e-letter-web#readme)
+👉 [Lihat Proyek Web](https://github.com/e-letter/e-letter-web) | [Dokumentasi Lengkap](https://github.com/e-letter/e-letter-web#readme)
 
 ---
 
-## 🖥️ Desktop Application
+## 🖥️ Aplikasi Desktop
 
-A powerful desktop application for managing school permission letters with modern Fluent Design WPF interface. Features client-server architecture with an optional SQLite cache for offline support.
+Aplikasi desktop yang kuat untuk mengelola surat izin sekolah dengan antarmuka WPF Fluent Design modern. Menawarkan arsitektur klien-server dengan cache SQLite opsional untuk dukungan offline.
 
-### Desktop Features
+### Fitur Desktop
 
-- **Modern WPF Design** - Custom gradient themes with smooth transitions
-- **Intuitive Navigation** - Easy-to-use menu system for all user roles
-- **Professional Styling** - WPF-UI framework with custom controls
-- **Role-Based Access** - Student, Teacher, and Administrator portals
-- **Permission Management** - Create, track, and manage all letter types
-- **Letter Tracking** - Real-time status of permission requests
-- **Comprehensive History** - Complete audit trail of all actions
-- **Local Storage** - Secure JSON-based data persistence
-- **Offline Support** - SQLite cache for offline data access
-- **Push Notifications** - Windows Toast notifications for status updates
-- **Windows Native** - .NET Framework 4.7.2 compatibility
+- **Desain WPF Modern** - Tema gradien khusus dengan transisi yang halus
+- **Navigasi Intuitif** - Sistem menu yang mudah digunakan untuk semua peran pengguna
+- **Gaya Profesional** - Framework WPF-UI dengan kontrol khusus
+- **Akses Berbasis Peran** - Portal Siswa, Guru, dan Administrator
+- **Manajemen Izin** - Buat, lacak, dan kelola semua jenis surat
+- **Pelacakan Surat** - Status real-time dari permintaan izin
+- **Riwayat Lengkap** - Jejak audit lengkap dari semua tindakan
+- **Penyimpanan Lokal** - Persistensi data berbasis JSON yang aman
+- **Dukungan Offline** - Cache SQLite untuk akses data tanpa koneksi
+- **Notifikasi Push** - Notifikasi desktop Windows untuk pembaruan status
+- **Windows Native** - Kompatibilitas .NET Framework 4.7.2
 
-### Desktop Tech Stack
+### Tumpukan Teknologi Desktop
 
-| Component         | Technology                             |
-| ----------------- | -------------------------------------- |
-| **Platform**      | Windows Desktop (.NET Framework 4.7.2) |
-| **Language**      | C# 10.0                                |
-| **UI Framework**  | WPF (Windows Presentation Foundation)  |
-| **UI Library**    | WPF-UI 4.2.1                           |
-| **Pattern**       | MVVM with two-way data binding         |
-| **Serialization** | Newtonsoft.Json 13.0.4                 |
-| **Networking**    | HttpClient with bearer token auth      |
-| **Local DB**      | SQLite (optional, for offline mode)    |
-| **Notifications** | Windows Toast                          |
+| Komponen           | Teknologi                              |
+| ------------------ | -------------------------------------- |
+| **Platform**       | Windows Desktop (.NET Framework 4.7.2) |
+| **Bahasa**         | C# 10.0                                |
+| **Framework UI**   | WPF (Windows Presentation Foundation)  |
+| **Pustaka UI**     | WPF-UI 4.2.1                           |
+| **Pola**           | MVVM dengan pengikatan data dua arah   |
+| **Serialisasi**    | Newtonsoft.Json 13.0.4                 |
+| **Jaringan**       | HttpClient dengan autentikasi bearer   |
+| **Database Lokal** | SQLite (opsional, untuk mode offline)  |
+| **Notifikasi**     | Windows Toast                          |
 
-### Desktop Quick Start
+### Mulai Cepat (Desktop)
 
 ```bash
-# Clone repository
+# Kloning repositori
 git clone https://github.com/e-letter/e-letter-desktop.git
 cd e-letter-desktop
 
-# Open solution in Visual Studio
+# Buka solusi di Visual Studio
 start e-letter.sln
 # Build > Build Solution (Ctrl+Shift+B)
 # Debug > Start Debugging (F5)
 ```
 
-**Terminal 1** — Start Go backend (from `backend/` folder):
+**Terminal 1** — Mulai backend Go (dari folder `backend/`):
 
 ```bash
 go run cmd/api/main.go
 ```
 
-### Desktop Supported Views
+### Tampilan Desktop yang Didukung
 
-- Home Screen - Dashboard and navigation menu
-- Permission Forms - Create entry and exit letters
-- Letter Tracking - View and manage all letters
-- Student Registry - Manage student information
-- Teacher Registry - Manage teacher information
-- Check-in System - Student and teacher attendance tracking
-- Dispensation Management - Special permission handling
+- Layar Utama - Dasbor dan menu navigasi
+- Formulir Izin - Membuat surat izin masuk/keluar
+- Pelacakan Surat - Melihat dan mengelola semua surat
+- Registrasi Siswa - Mengelola data siswa
+- Registrasi Guru - Mengelola data guru
+- Sistem Absensi - Pelacakan kehadiran siswa dan guru
+- Manajemen Dispensasi - Penanganan izin khusus
 
-👉 [View Desktop Project](https://github.com/e-letter/e-letter-desktop) | [Full Documentation](https://github.com/e-letter/e-letter-desktop#readme)
+👉 [Lihat Proyek Desktop](https://github.com/e-letter/e-letter-desktop) | [Dokumentasi Lengkap](https://github.com/e-letter/e-letter-desktop#readme)
 
 ---
 
-## 📱 Mobile Application
+## 📱 Aplikasi Mobile
 
-A powerful Android application for managing school permission letters with native mobile interface and seamless user experience. Built with Kotlin and Android Jetpack with Material Design 3.
+Aplikasi Android yang kuat untuk mengelola surat izin sekolah dengan antarmuka mobile native dan pengalaman pengguna yang mulus. Dibangun dengan Kotlin dan Android Jetpack dengan Material Design 3.
 
-### Mobile Features
+### Fitur Mobile
 
-- **Material Design 3** - Modern, intuitive interface optimized for mobile
-- **Role-Based Access** - Student App and Teacher App with different dashboards
-- **Permission Management** - Create, submit, and track letters on-the-go
-- **Real-Time Notifications** - Push notifications for approval status updates
-- **Offline Support** - Basic functionality available without internet (Room DB pending)
-- **Biometric Authentication** - Support for fingerprint and face recognition (pending)
-- **Letter Tracking** - Track submitted letters with real-time status
-- **Responsive Design** - Perfect display on phones and tablets
+- **Material Design 3** - Antarmuka modern dan intuitif yang dioptimalkan untuk mobile
+- **Akses Berbasis Peran** - Aplikasi Siswa dan Guru dengan dasbor yang berbeda
+- **Manajemen Izin** - Buat, ajukan, dan lacak surat di mana saja
+- **Notifikasi Real-Time** - Notifikasi push untuk pembaruan status persetujuan
+- **Dukungan Offline** - Fungsionalitas dasar tersedia tanpa internet
+- **Autentikasi Biometrik** - Dukungan sidik jari dan pengenalan wajah
+- **Pelacakan Surat** - Lacak surat yang diajukan dengan status real-time
+- **Desain Responsif** - Tampilan sempurna di ponsel dan tablet
 
-### Mobile Tech Stack
+### Tumpukan Teknologi Mobile
 
-| Component        | Technology                          |
-| ---------------- | ----------------------------------- |
-| **Platform**     | Android 8+ (minSdk 24)              |
-| **Language**     | Kotlin 2.0                          |
-| **UI Framework** | Android Jetpack + Material Design 3 |
-| **Database**     | Room Database (local persistence)   |
-| **Networking**   | Retrofit 2 + OkHttp for API calls   |
-| **Auth**         | JWT with SharedPreferences          |
-| **Logging**      | HttpLoggingInterceptor (HTTP debug) |
+| Komponen         | Teknologi                               |
+| ---------------- | --------------------------------------- |
+| **Platform**     | Android 8+ (minSdk 24)                  |
+| **Bahasa**       | Kotlin 2.0                              |
+| **Framework UI** | Android Jetpack + Material Design 3     |
+| **Database**     | Room Database (persistensi lokal)       |
+| **Jaringan**     | Retrofit 2 + OkHttp untuk panggilan API |
+| **Auth**         | JWT dengan SharedPreferences            |
+| **Pencatatan**   | HttpLoggingInterceptor (debug HTTP)     |
 
-### Mobile Quick Start
+### Mulai Cepat (Mobile)
 
 ```bash
 git clone https://github.com/e-letter/e-letter-android.git
 cd e-letter-android
-# Open in Android Studio
+# Buka di Android Studio
 # File > Sync Now > Run > Run 'app'
 ```
 
-### Mobile Key Screens
+### Layar Utama Mobile
 
-- Welcome/Login - Authentication with role selection
-- Student Dashboard - Home, create letter, view letters, tracking
-- Teacher Dashboard - Home, review requests, manage approvals
-- Permission Forms - Create letters with form validation
-- Letter History - View all submitted letters
-- Profile Management - User profile and settings
-- Notifications - Real-time approval updates
+- Sambutan/Masuk - Autentikasi dengan pemilihan peran
+- Dasbor Siswa - Beranda, buat surat, lihat surat, pelacakan
+- Dasbor Guru - Beranda, tinjau permintaan, kelola persetujuan
+- Formulir Izin - Buat surat dengan validasi formulir
+- Riwayat Surat - Lihat semua surat yang diajukan
+- Manajemen Profil - Profil dan pengaturan pengguna
+- Notifikasi - Pembaruan persetujuan secara real-time
 
-👉 [View Mobile Project](https://github.com/e-letter/e-letter-android) | [Full Documentation](https://github.com/e-letter/e-letter-android#readme)
-
----
-
-## 🔄 User Workflows
-
-### Student Workflow
-
-```text
-Register/Login
-     ↓
-Select Permission Type
-     ↓
-Fill Permission Form
-     ↓
-Submit Request
-     ↓
-Track Approval Status
-     ↓
-Receive Approval/Rejection
-```
-
-**Available on**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
-
-### Teacher Workflow
-
-```text
-Login
-     ↓
-View Pending Requests
-     ↓
-Review Student Information
-     ↓
-Approve/Reject/Request Info
-     ↓
-Add Comments & Signatures
-     ↓
-Notify Student of Decision
-```
-
-**Available on**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
-
-### Administrator Workflow
-
-```text
-Login
-     ↓
-Manage Users
-     ↓
-Configure Workflows
-     ↓
-View System Reports
-     ↓
-Monitor Audit Logs
-     ↓
-Maintain Settings
-```
-
-**Available on**: 🌐 Web | 🖥️ Desktop
+👉 [Lihat Proyek Mobile](https://github.com/e-letter/e-letter-android) | [Dokumentasi Lengkap](https://github.com/e-letter/e-letter-android#readme)
 
 ---
 
-## 🔐 Security & Authentication
+## 🔄 Alur Pengguna
 
-### Common Security Features
+### Alur Siswa
 
-- **Role-Based Access Control** - Fine-grained permission management
-- **Secure Password Storage** - bcrypt hashing (Web/Backend), secure storage (Desktop/Mobile)
-- **Session Management** - Secure session creation and tracking
-- **Audit Logging** - Complete history of all actions
-- **Token-Based Authentication** - JWT for web, session tokens for desktop/mobile
+```text
+Daftar/Masuk
+     ↓
+Pilih Jenis Izin
+     ↓
+Isi Formulir Izin
+     ↓
+Ajukan Permintaan
+     ↓
+Lacak Status Persetujuan
+     ↓
+Terima Persetujuan/Penolakan
+```
 
-### Platform-Specific Security
+**Tersedia di**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
 
-| Feature               | Web | Desktop | Mobile |
-| --------------------- | --- | ------- | ------ |
-| JWT Authentication    | ✅  | ✅      | ✅     |
-| Refresh Tokens        | ✅  | ✅      | -      |
-| Local Session Storage | ✅  | ✅      | ✅     |
-| HTTPS Only            | ✅  | -       | -      |
-| Encrypted Preferences | -   | -       | -      |
-| Biometric Auth        | -   | -       | 🔜     |
+### Alur Guru
 
-### User Role Hierarchy
+```text
+Masuk
+     ↓
+Lihat Permintaan Tertunda
+     ↓
+Tinjau Informasi Siswa
+     ↓
+Setujui/Tolak/Minta Informasi
+     ↓
+Tambahkan Komentar & Tanda Tangan
+     ↓
+Beritahu Siswa Keputusan
+```
+
+**Tersedia di**: 🌐 Web | 🖥️ Desktop | 📱 Mobile
+
+### Alur Administrator
+
+```text
+Masuk
+     ↓
+Kelola Pengguna
+     ↓
+Konfigurasi Alur Kerja
+     ↓
+Lihat Laporan Sistem
+     ↓
+Pantau Log Audit
+     ↓
+Kelola Pengaturan
+```
+
+**Tersedia di**: 🌐 Web | 🖥️ Desktop
+
+---
+
+## 🔐 Keamanan & Autentikasi
+
+### Fitur Keamanan Umum
+
+- **Kontrol Akses Berbasis Peran** - Manajemen izin yang terperinci
+- **Penyimpanan Kata Sandi Aman** - Hashing bcrypt (Web/Backend), penyimpanan aman (Desktop/Mobile)
+- **Manajemen Sesi** - Pembuatan dan pelacakan sesi yang aman
+- **Pencatatan Audit** - Riwayat lengkap semua tindakan
+- **Autentikasi Berbasis Token** - JWT untuk web, token sesi untuk desktop/mobile
+
+### Keamanan Spesifik Platform
+
+| Fitur                  | Web | Desktop | Mobile |
+| ---------------------- | --- | ------- | ------ |
+| Autentikasi JWT        | ✅  | ✅      | ✅     |
+| Token Refresh          | ✅  | ✅      | -      |
+| Penyimpanan Sesi Lokal | ✅  | ✅      | ✅     |
+| HTTPS Hanya            | ✅  | -       | -      |
+| Preferensi Terenkripsi | -   | -       | -      |
+| Autentikasi Biometrik  | -   | -       | 🔜     |
+
+### Hierarki Peran Pengguna
 
 ```text
 ADMIN
-├── Full system access
-├── Manage users & permissions
-└── View all reports
+├── Akses penuh sistem
+├── Kelola pengguna & izin
+└── Lihat semua laporan
 
-KEPSEK (Principal)
-├── Override approval authority
-├── View institution statistics
-└── Override approval stages
+KEPSEK (Kepala Sekolah)
+├── Otoritas persetujuan akhir
+├── Lihat statistik institusi
+└── Ganti tahapan persetujuan
 
-GURU_KESISWAAN (Discipline Teacher)
-├── Review student requests
-├── Approve/reject letters
-└── Add digital signatures
+GURU_KESISWAAN (Guru Tata Tertib)
+├── Tinjau permintaan siswa
+├── Setujui/tolak surat
+└── Tambahkan tanda tangan digital
 
-GURU_MAPEL (Subject Teacher)
-├── Review assigned student requests
-├── Approve/forward to higher role
-└── Manage class activities
+GURU_MAPEL (Guru Mata Pelajaran)
+├── Tinjau permintaan siswa di jadwalnya
+├── Setujui/teruskan ke peran lebih tinggi
+└── Kelola kegiatan kelas
 
-SISWA (Student)
-├── Submit permission requests
-├── Track request status
-└── View approval comments
+SISWA (Siswa)
+├── Ajukan permintaan izin
+├── Lacak status permintaan
+└── Lihat komentar persetujuan
 ```
 
-### Sub-Roles for Teachers
+### Sub-Peran Guru
 
-Guru dapat memiliki beberapa sub-role yang menentukan cakupan persetujuan:
+Guru dapat memiliki beberapa sub-peran yang menentukan cakupan persetujuan:
 
 | Peran          | Deskripsi               | Cakupan Persetujuan       |
 | -------------- | ----------------------- | ------------------------- |
@@ -335,189 +335,189 @@ Guru dapat memiliki beberapa sub-role yang menentukan cakupan persetujuan:
 
 ---
 
-## 📊 Features Comparison
+## 📊 Perbandingan Fitur
 
-| Feature                   | Web | Desktop | Mobile  |
-| ------------------------- | --- | ------- | ------- |
-| Create Permission Letters | ✅  | ✅      | ✅      |
-| Track Letter Status       | ✅  | ✅      | ✅      |
-| Teacher Review/Approval   | ✅  | ✅      | ✅      |
-| Admin Management          | ✅  | ✅      | -       |
-| Real-Time Updates         | ✅  | -       | ✅      |
-| Beautiful UI              | ✅  | ✅      | ✅      |
-| Offline Support           | -   | ✅      | Partial |
-| Mobile Optimized          | ✅  | -       | ✅      |
-| Export Reports            | ✅  | ✅      | -       |
-| Database Persistence      | ✅  | ✅      | ✅      |
+| Fitur                   | Web | Desktop | Mobile   |
+| ----------------------- | --- | ------- | -------- |
+| Buat Surat Izin         | ✅  | ✅      | ✅       |
+| Lacak Status Surat      | ✅  | ✅      | ✅       |
+| Review/Persetujuan Guru | ✅  | ✅      | ✅       |
+| Manajemen Admin         | ✅  | ✅      | -        |
+| Pembaruan Real-Time     | ✅  | -       | ✅       |
+| UI yang Indah           | ✅  | ✅      | ✅       |
+| Dukungan Offline        | -   | ✅      | Sebagian |
+| Dioptimalkan Mobile     | ✅  | -       | ✅       |
+| Ekspor Laporan          | ✅  | ✅      | -        |
+| Penyimpanan Database    | ✅  | ✅      | ✅       |
 
 ---
 
-## 🗄️ Database Architecture
+## 🗄️ Arsitektur Database
 
-### Backend Database (MariaDB)
+### Database Backend (MariaDB)
 
-Shared by Web and Desktop clients via Go API. Organized into **6 logical sections**:
+Digunakan bersama oleh klien Web dan Desktop melalui API Go. Terorganisir ke dalam **6 bagian logis**:
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
 │            1. TABEL REFERENSI UTAMA                         │
 │  (ref_values, academic_years, majors, classes, subjects)    │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
+                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │            2. TABEL MANAJEMEN PENGGUNA                      │
 │  (users, student_profiles, teacher_profiles, principals)    │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
+                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │        3. TABEL ORGANISASI AKADEMIK                         │
 │  (teacher_roles, class_assignments, schedules)              │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
+                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │       4. TABEL SISTEM PERMOHONAN & PERSETUJUAN              │
 │  (requests, request_approvals, approval_flow_templates)     │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
+                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │            5. TABEL PENDUKUNG                               │
 │  (attachments, notifications, letter_counters)              │
 └─────────────────────────────────────────────────────────────┘
-                              ↓
+                               ↓
 ┌─────────────────────────────────────────────────────────────┐
 │         6. TABEL AUDIT & KEAMANAN                           │
 │  (jwt_tokens, audit_logs, password_reset_tokens)            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Key Tables
+### Tabel Kunci
 
-| Table                     | Purpose                             | Key Fields                                    |
-| ------------------------- | ----------------------------------- | --------------------------------------------- |
-| `users`                   | User accounts                       | `id`, `username/email`, `role`, `status`      |
-| `student_profiles`        | Student profile data                | `user_id`, `student_code` (NISN), `signature` |
-| `teacher_profiles`        | Teacher profile data                | `user_id`, `employee_code` (NIP), `signature` |
-| `teacher_roles`           | Teacher sub-roles per academic year | `teacher_id`, `role_name`, `status`           |
-| `requests`                | Permission letter requests          | `request_number`, `type_id`, `status`         |
-| `request_approvals`       | Approval workflow steps             | `request_id`, `step_no`, `approver_role`      |
-| `approval_flow_templates` | Configurable approval templates     | `type_id`, `step_no`, `approver_role`         |
-| `jwt_tokens`              | JWT token storage & revocation      | `user_id`, `token_hash`, `is_revoked`         |
+| Tabel                     | Tujuan                             | Bidang Kunci                                  |
+| ------------------------- | ---------------------------------- | --------------------------------------------- |
+| `users`                   | Akun pengguna                      | `id`, `username/email`, `role`, `status`      |
+| `student_profiles`        | Data profil siswa                  | `user_id`, `student_code` (NISN), `signature` |
+| `teacher_profiles`        | Data profil guru                   | `user_id`, `employee_code` (NIP), `signature` |
+| `teacher_roles`           | Sub-peran guru per tahun ajaran    | `teacher_id`, `role_name`, `status`           |
+| `requests`                | Permintaan surat izin              | `request_number`, `type_id`, `status`         |
+| `request_approvals`       | Langkah alur persetujuan           | `request_id`, `step_no`, `approver_role`      |
+| `approval_flow_templates` | Template alur persetujuan          | `type_id`, `step_no`, `approver_role`         |
+| `jwt_tokens`              | Penyimpanan & pencabutan token JWT | `user_id`, `token_hash`, `is_revoked`         |
 
-### Client-Side Cache (SQLite — Desktop & Mobile)
+### Cache Klien-Sisi (SQLite — Desktop & Mobile)
 
-| Table           | Purpose                                      |
+| Tabel           | Tujuan                                       |
 | --------------- | -------------------------------------------- |
-| `local_letters` | Letters created offline (pending sync)       |
-| `sync_queue`    | Operation queue for deferred synchronization |
-| `cached_users`  | Cached reference/master data                 |
+| `local_letters` | Surat yang dibuat offline (menunggu sinkron) |
+| `sync_queue`    | Antrian operasi untuk sinkronisasi tertunda  |
+| `cached_users`  | Data referensi/master yang di-cache          |
 
 ---
 
-## 🔌 API Reference
+## 🔌 Referensi API
 
-### Base URL
+### URL Dasar
 
 ```text
 http://localhost:8080/api/v1
 ```
 
-### Authentication Endpoints
+### Endpoint Autentikasi
 
-| Endpoint        | Method | Description          |
+| Endpoint        | Metode | Deskripsi            |
 | --------------- | ------ | -------------------- |
-| `/auth/login`   | POST   | User login           |
-| `/auth/logout`  | POST   | User logout          |
-| `/auth/refresh` | POST   | Refresh access token |
-| `/register`     | POST   | Register with token  |
+| `/auth/login`   | POST   | Masuk pengguna       |
+| `/auth/logout`  | POST   | Keluar pengguna      |
+| `/auth/refresh` | POST   | Segarkan token akses |
+| `/register`     | POST   | Daftar dengan token  |
 
-### User Endpoints
+### Endpoint Pengguna
 
-| Endpoint        | Method | Description         |
-| --------------- | ------ | ------------------- |
-| `/user/profile` | GET    | Get user profile    |
-| `/user/update`  | POST   | Update user profile |
+| Endpoint        | Metode | Deskripsi       |
+| --------------- | ------ | --------------- |
+| `/user/profile` | GET    | Dapatkan profil |
+| `/user/update`  | POST   | Perbarui profil |
 
-### Permission Request Endpoints
+### Endpoint Permintaan Izin
 
-| Endpoint               | Method | Description               |
-| ---------------------- | ------ | ------------------------- |
-| `/permission-requests` | GET    | List permission requests  |
-| `/permission-requests` | POST   | Create permission request |
-| `/permission-requests` | PUT    | Update permission request |
-| `/permission-requests` | DELETE | Delete permission request |
-| `/approve`             | POST   | Approve/reject request    |
+| Endpoint               | Metode | Deskripsi                |
+| ---------------------- | ------ | ------------------------ |
+| `/permission-requests` | GET    | Daftar permintaan izin   |
+| `/permission-requests` | POST   | Buat permintaan izin     |
+| `/permission-requests` | PUT    | Perbarui permintaan izin |
+| `/permission-requests` | DELETE | Hapus permintaan izin    |
+| `/approve`             | POST   | Setujui/tolak permintaan |
 
-### Letter Endpoints
+### Endpoint Surat
 
-| Endpoint                       | Method | Description             |
-| ------------------------------ | ------ | ----------------------- |
-| `/letters/student/create`      | POST   | Create student letter   |
-| `/letters/teacher/create`      | POST   | Create teacher letter   |
-| `/letters/student/izin-masuk`  | GET    | Get izin masuk letters  |
-| `/letters/student/izin-keluar` | GET    | Get izin keluar letters |
-| `/letters/student/dispensasi`  | GET    | Get dispensasi letters  |
+| Endpoint                       | Metode | Deskripsi                  |
+| ------------------------------ | ------ | -------------------------- |
+| `/letters/student/create`      | POST   | Buat surat siswa           |
+| `/letters/teacher/create`      | POST   | Buat surat guru            |
+| `/letters/student/izin-masuk`  | GET    | Dapatkan surat izin masuk  |
+| `/letters/student/izin-keluar` | GET    | Dapatkan surat izin keluar |
+| `/letters/student/dispensasi`  | GET    | Dapatkan surat dispensasi  |
 
-### Client Credentials (Development)
+### Kredensial Klien (Pengembangan)
 
-| Role        | Email      | Password | Dashboard         |
-| ----------- | ---------- | -------- | ----------------- |
-| **Student** | `123`      | `12345`  | Student Dashboard |
-| **Teacher** | `G123`     | `12345`  | Teacher Dashboard |
-| **Admin**   | `admin123` | `12345`  | Admin Panel       |
-
----
-
-## 🎨 Design System
-
-All platforms follow a consistent, modern design language with gradient themes and glassmorphism effects.
-
-### Color Palette
-
-| Type             | Primary Color | Gradient            |
-| ---------------- | ------------- | ------------------- |
-| Entry/Izin Masuk | Purple        | `#C471ED → #F64F59` |
-| Exit/Izin Keluar | Orange        | `#FDC830 → #F37335` |
-| Dispensation     | Blue          | `#2193b0 → #6dd5ed` |
-
-### Typography
-
-| Context       | Web       | Desktop  | Mobile |
-| ------------- | --------- | -------- | ------ |
-| **Body Text** | Nunito    | System   | Roboto |
-| **Headings**  | Quicksand | Segoe UI | Roboto |
-
-### Component Patterns
-
-- **Interactive Cards** - Selectable with visual feedback
-- **Smooth Animations** - Framer Motion (Web), WPF (Desktop), Material (Mobile)
-- **Glassmorphism** - Modern backdrop blur effects
-- **Responsive Layouts** - Adapts to all screen sizes
+| Peran     | Email      | Kata Sandi | Dasbor       |
+| --------- | ---------- | ---------- | ------------ |
+| **Siswa** | `123`      | `12345`    | Dasbor Siswa |
+| **Guru**  | `G123`     | `12345`    | Dasbor Guru  |
+| **Admin** | `admin123` | `12345`    | Panel Admin  |
 
 ---
 
-## 🛠️ Development Setup
+## 🎨 Sistem Desain
 
-### Environment Variables (Web)
+Semua platform mengikuti bahasa desain modern yang konsisten dengan tema gradien dan efek glassmorphism.
+
+### Palet Warna
+
+| Jenis Izin         | Warna Utama | Gradien             |
+| ------------------ | ----------- | ------------------- |
+| Izin Masuk (Entry) | Ungu        | `#C471ED → #F64F59` |
+| Izin Keluar (Exit) | Oranye      | `#FDC830 → #F37335` |
+| Dispensasi         | Biru        | `#2193b0 → #6dd5ed` |
+
+### Tipografi
+
+| Konteks        | Web       | Desktop  | Mobile |
+| -------------- | --------- | -------- | ------ |
+| **Teks Tubuh** | Nunito    | System   | Roboto |
+| **Judul**      | Quicksand | Segoe UI | Roboto |
+
+### Pola Komponen
+
+- **Kartu Interaktif** - Dapat dipilih dengan umpan balik visual
+- **Animasi Halus** - Framer Motion (Web), WPF (Desktop), Material (Mobile)
+- **Glassmorphism** - Efek blur latar belakang modern
+- **Tata Letak Responsif** - Menyesuaikan semua ukuran layar
+
+---
+
+## 🛠️ Pengaturan Pengembangan
+
+### Variabel Lingkungan (Web)
 
 ```env
-# Database
+# Basis Data
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=eletter_user
 DB_PASSWORD=your_password
 DB_NAME=db_eletter
 
-# JWT Secrets
+# Rahasia JWT
 JWT_ACCESS_SECRET=your_access_secret
 JWT_REFRESH_SECRET=your_refresh_secret
 
-# Application
+# Aplikasi
 NODE_ENV=development
 APP_ENV=development
 APP_PORT=8080
 ```
 
-### Environment Variables (Desktop — `App.config`)
+### Variabel Lingkungan (Desktop — `App.config`)
 
 ```xml
 <appSettings>
@@ -528,7 +528,7 @@ APP_PORT=8080
 </appSettings>
 ```
 
-### Environment Variables (Backend Go — `.env`)
+### Variabel Lingkungan (Backend Go — `.env`)
 
 ```env
 DB_HOST=localhost
@@ -542,7 +542,7 @@ JWT_REFRESH_SECRET=your_refresh_secret
 
 ---
 
-## 📱 Mobile Setup Details
+## 📱 Detail Pengaturan Mobile
 
 ### Prasyarat
 
@@ -552,7 +552,7 @@ JWT_REFRESH_SECRET=your_refresh_secret
 - **Kotlin** 2.0.21
 - **Server Backend** berjalan di `http://192.168.1.6:3000/`
 
-### Konfigurasi API Base URL
+### Konfigurasi URL Basis API
 
 Ubah `BASE_URL` di `RetrofitClient.kt`:
 
@@ -570,107 +570,107 @@ private const val BASE_URL = "http://192.168.1.6:3000/"
 
 ---
 
-## 📞 Support & Links
+## 📞 Dukungan & Tautan
 
-[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-desktop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
+[🌐 Aplikasi Web](https://github.com/e-letter/e-letter-web) · [🖥️ Aplikasi Desktop](https://github.com/e-letter/e-letter-desktop) · [📱 Aplikasi Mobile](https://github.com/e-letter/e-letter-android)
 
-[Report Bug](https://github.com/e-letter/e-letter-web/issues) · [Request Feature](https://github.com/e-letter/e-letter-web/issues) · [Discussions](https://github.com/e-letter/e-letter-web/discussions)
+[Laporkan Bug](https://github.com/e-letter/e-letter-web/issues) · [Minta Fitur](https://github.com/e-letter/e-letter-web/issues) · [Diskusi](https://github.com/e-letter/e-letter-web/discussions)
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 Ucapan Terima Kasih
 
-### Built With
+### Dibangun Dengan
 
 #### Web
 
-- [Next.js](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Framer Motion](https://www.framer.com/motion/) - Animations
-- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [Next.js](https://nextjs.org/) - Kerangka kerja React
+- [Tailwind CSS](https://tailwindcss.com/) - Gaya
+- [Framer Motion](https://www.framer.com/motion/) - Animasi
+- [shadcn/ui](https://ui.shadcn.com/) - Komponen UI
 
 #### Desktop
 
-- [WPF-UI](https://github.com/lepoco/wpfui) - Modern WPF controls
-- [Newtonsoft.Json](https://www.newtonsoft.com/json) - JSON serialization
+- [WPF-UI](https://github.com/lepoco/wpfui) - Kontrol WPF modern
+- [Newtonsoft.Json](https://www.newtonsoft.com/json) - Serialisasi JSON
 - [.NET Framework](https://dotnet.microsoft.com/) - Runtime
 
 #### Mobile
 
-- [Android Jetpack](https://developer.android.com/jetpack) - Framework
-- [Material Design 3](https://material.io/) - Design system
-- [Retrofit2](https://square.github.io/retrofit/) - Networking
-- [Room Database](https://developer.android.com/jetpack/androidx/releases/room) - Persistence
+- [Android Jetpack](https://developer.android.com/jetpack) - Kerangka kerja
+- [Material Design 3](https://material.io/) - Sistem desain
+- [Retrofit2](https://square.github.io/retrofit/) - Jaringan
+- [Room Database](https://developer.android.com/jetpack/androidx/releases/room) - Persistensi
 
-### Special Thanks
+### Ucapan Khusus
 
-- The open-source community for amazing tools and libraries
-- All contributors and supporters of the E-Letter project
-
----
-
-## 📄 License
-
-**Proprietary License** - All Rights Reserved
-
-All E-Letter repositories are available for:
-
-- ✅ Viewing and educational purposes
-- ✅ Contributing via Pull Requests
-- ✅ Internal organizational use
-
-Prohibited without explicit permission:
-
-- ❌ Redistribution
-- ❌ Creating derivative works
-- ❌ Commercial use
-- ❌ Removing copyright notices
+- Komunitas open-source untuk alat dan pustaka luar biasa
+- Semua kontributor dan pendukung proyek E-Letter
 
 ---
 
-## 🏢 Organization Structure
+## 📄 Lisensi
+
+**Lisensi Proprietary** - Seluruh Hak Dilindungi
+
+Semua repositori E-Letter tersedia untuk:
+
+- ✅ Keperluan edukasi dan pembelajaran
+- ✅ Kontribusi melalui Pull Requests
+- ✅ Penggunaan organisasi internal
+
+Dilarang tanpa izin eksplisit:
+
+- ❌ Redistribusi
+- ❌ Membuat karya turunan
+- ❌ Penggunaan komersial
+- ❌ Menghapus pemberitahuan hak cipta
+
+---
+
+## 🏢 Struktur Organisasi
 
 ```text
 E-Letter Organization
 │
-├── 🌐 e-letter-web (Website)
+├── 🌐 e-letter-web (Situs Web)
 │   ├── Next.js 16 + TypeScript
 │   ├── Tailwind CSS 4 + shadcn/ui
-│   ├── Framer Motion (Animations)
-│   ├── MariaDB 11.5 Database
-│   ├── Go 1.22 + Gin Backend API
+│   ├── Framer Motion (Animasi)
+│   ├── Database MariaDB 11.5
+│   ├── Backend API Go 1.22 + Gin
 │   └── Docker & Docker Compose
 │
 ├── 🖥️ e-letter-desktop (Windows)
 │   ├── .NET Framework 4.7.2 + WPF
 │   ├── WPF-UI 4.2.1 (Fluent Design)
-│   ├── MVVM Architecture
+│   ├── Arsitektur MVVM
 │   ├── Newtonsoft.Json 13.0.4
-│   ├── SQLite (Offline Cache)
-│   └── Windows Toast Notifications
+│   ├── SQLite (Cache Offline)
+│   └── Notifikasi Toast Windows
 │
 └── 📱 e-letter-android (Mobile)
     ├── Android 14+ / Kotlin 2.0
     ├── Material Design 3
-    ├── Android Jetpack Framework
+    ├── Kerangka Kerja Android Jetpack
     ├── Retrofit 2 + OkHttp
-    ├── Room Database (pending)
-    └── Biometric Auth (pending)
+    ├── Room Database (rencana)
+    └── Autentikasi Biometrik (rencana)
 ```
 
 ---
 
-## 🚀 Future Roadmap
+## 🚀 Rencana Masa Depan
 
-- [ ] **Mobile offline mode** — Room Database caching for Android
-- [ ] **Push notifications** — Firebase Cloud Messaging integration
-- [ ] **Biometric authentication** — Fingerprint & face recognition (Mobile)
-- [ ] **Photo/document attachments** — Camera/gallery integration (Mobile)
-- [ ] **PDF generation & download** — Approved letter export
-- [ ] **Multi-language support** — Internationalization (i18n)
-- [ ] **Dark theme toggle** — Explicit dark/light mode switch (Mobile)
-- [ ] **Jetpack Compose migration** — Modern UI toolkit for Android
+- [ ] **Mode offline mobile** — Caching database Room untuk Android
+- [ ] **Notifikasi push** — Integrasi Firebase Cloud Messaging
+- [ ] **Autentikasi biometrik** — Pengenalan sidik jari & wajah (Mobile)
+- [ ] **Lampiran foto/dokumen** — Integrasi kamera/galeri (Mobile)
+- [ ] **Pembuatan & unduh PDF** — Ekspor surat yang disetujui
+- [ ] **Dukungan multi-bahasa** — Internasionalisasi (i18n)
+- [ ] **Tombol mode gelap** — Tombol saklar tema gelap/terang (Mobile)
+- [ ] **Migrasi Jetpack Compose** — Toolkit UI modern untuk Android
 
 ---
 
-Simplifying school permission letter management across all platforms
+Menyederhanakan manajemen surat izin sekolah di semua platform
