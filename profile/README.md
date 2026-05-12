@@ -4,7 +4,10 @@
 
 [![Website](https://img.shields.io/badge/Web-Next.js%2016-000?logo=next.js)](https://github.com/e-letter/e-letter-web)
 [![Desktop](https://img.shields.io/badge/Desktop-.NET%204.7.2-512BD4?logo=dot-net)](https://github.com/e-letter/e-letter-desktop)
-[![Mobile](https://img.shields.io/badge/Mobile-Android%20Java-3DDC84?logo=android)](https://github.com/e-letter/e-letter-android)
+[![Mobile](https://img.shields.io/badge/Mobile-Android%2014-3DDC84?logo=android)](https://github.com/e-letter/e-letter-android)
+[![License](https://img.shields.io/badge/License-Proprietary-red)](LICENSE)
+
+---
 
 ## 📊 Platform Overview
 
@@ -12,18 +15,18 @@
 | ---------- | ------------------------- | ---------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
 | 🌐 Web     | Next.js 16 + Tailwind CSS | TypeScript | Real-time tracking, Multi-stage approval, Beautiful UI | [e-letter-web](https://github.com/e-letter/e-letter-web)         |
 | 🖥️ Desktop | .NET 4.7.2 + WPF          | C#         | Offline support, Local storage, Native Windows         | [e-letter-desktop](https://github.com/e-letter/e-letter-desktop) |
-| 📱 Mobile  | Android 11+               | Java       | Mobile-optimized, Push notifications, Biometric auth   | [e-letter-android](https://github.com/e-letter/e-letter-android) |
+| 📱 Mobile  | Android 14+ / Kotlin      | Kotlin     | Mobile-optimized, Push notifications, Biometric auth   | [e-letter-android](https://github.com/e-letter/e-letter-android) |
 
 ---
 
 ## 🎯 About E-Letter
 
-E-Letter is a comprehensive **school permission letter management system** designed to streamline managing student permission requests across multiple platforms.
+E-Letter is a comprehensive **school permission letter management system** designed to streamline managing student permission requests across multiple platforms. Built with a dual-backend architecture (Go API + Next.js frontend) and native platform clients, it delivers a consistent experience across Web, Desktop, and Mobile.
 
 ### Core Capabilities
 
 - **Multi-Platform Access** - Web, Desktop, and Mobile with unified workflows
-- **Role-Based Access Control** - Students, Teachers, and Administrators with tailored dashboards
+- **Role-Based Access Control** - Students, Teachers, Principals, and Administrators with tailored dashboards
 - **Real-Time Tracking** - Live status updates on permission requests (web & mobile)
 - **Multi-Stage Approval Workflow** - Complete letter routing with digital signatures
 - **Secure Authentication** - JWT tokens (web), session-based (desktop/mobile)
@@ -42,12 +45,7 @@ E-Letter is a comprehensive **school permission letter management system** desig
 
 ## 🌐 Web Application
 
-A modern, interactive web application for managing school permission letters with beautiful UI and seamless user experience.
-
-[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
-[![MariaDB](https://img.shields.io/badge/MariaDB-11.5-003545?logo=mariadb)](https://mariadb.org/)
+A modern, interactive web application for managing school permission letters with beautiful UI and seamless user experience. Built with Next.js 16 App Router, TypeScript, and a Go-powered backend API.
 
 ### Web Features
 
@@ -61,6 +59,19 @@ A modern, interactive web application for managing school permission letters wit
 - **JWT Authentication** - Secure token-based with refresh tokens
 - **Docker Ready** - One-command deployment
 
+### Web Tech Stack
+
+| Component      | Technology                     |
+| -------------- | ------------------------------ |
+| **Framework**  | Next.js 16 (App Router)        |
+| **Language**   | TypeScript 5.0                 |
+| **Styling**    | Tailwind CSS 4 + Framer Motion |
+| **UI Library** | shadcn/ui components           |
+| **Database**   | MariaDB 11.5                   |
+| **Backend**    | Go 1.22 + Gin framework        |
+| **Auth**       | JWT with access/refresh tokens |
+| **Deploy**     | Docker & Docker Compose        |
+
 ### Web Quick Start
 
 ```bash
@@ -72,19 +83,9 @@ docker-compose up -d
 bun dev
 ```
 
-### Web Tech Stack
-
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript 5
-- **Styling**: Tailwind CSS 4 + Framer Motion
-- **UI Library**: shadcn/ui components
-- **Database**: MariaDB 11.5
-- **Authentication**: JWT with access/refresh tokens
-- **Deployment**: Docker & Docker Compose
-
 ### Web Database Architecture
 
-The database uses **5 logical sections**:
+The web database uses **5 logical sections**:
 
 1. **Reference Tables** - Roles, majors, classes, permission types
 2. **User Management** - Users, profiles, authentication tokens
@@ -94,17 +95,13 @@ The database uses **5 logical sections**:
 
 Key tables: `users`, `permission_requests`, `approval_stages`, `permission_approval_logs`, `dispensation_students`
 
-👉 [View Web Project](https://github.com/e-letter/e-letter-web) | [Documentation](https://github.com/e-letter/e-letter-web#readme)
+👉 [View Web Project](https://github.com/e-letter/e-letter-web) | [Full Documentation](https://github.com/e-letter/e-letter-web#readme)
 
 ---
 
 ## 🖥️ Desktop Application
 
-A powerful desktop application for managing school permission letters with modern WPF interface and seamless user experience.
-
-[![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?logo=dot-net)](https://dotnet.microsoft.com/download/dotnet-framework)
-[![WPF](https://img.shields.io/badge/WPF-UI%204.1-0078D4?logo=windows)](https://github.com/lepoco/wpfui)
-[![C#](https://img.shields.io/badge/C%23-10.0-239120?logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+A powerful desktop application for managing school permission letters with modern Fluent Design WPF interface. Features client-server architecture with an optional SQLite cache for offline support.
 
 ### Desktop Features
 
@@ -116,26 +113,42 @@ A powerful desktop application for managing school permission letters with moder
 - **Letter Tracking** - Real-time status of permission requests
 - **Comprehensive History** - Complete audit trail of all actions
 - **Local Storage** - Secure JSON-based data persistence
+- **Offline Support** - SQLite cache for offline data access
+- **Push Notifications** - Windows Toast notifications for status updates
 - **Windows Native** - .NET Framework 4.7.2 compatibility
+
+### Desktop Tech Stack
+
+| Component         | Technology                             |
+| ----------------- | -------------------------------------- |
+| **Platform**      | Windows Desktop (.NET Framework 4.7.2) |
+| **Language**      | C# 10.0                                |
+| **UI Framework**  | WPF (Windows Presentation Foundation)  |
+| **UI Library**    | WPF-UI 4.2.1                           |
+| **Pattern**       | MVVM with two-way data binding         |
+| **Serialization** | Newtonsoft.Json 13.0.4                 |
+| **Networking**    | HttpClient with bearer token auth      |
+| **Local DB**      | SQLite (optional, for offline mode)    |
+| **Notifications** | Windows Toast                          |
 
 ### Desktop Quick Start
 
 ```bash
+# Clone repository
 git clone https://github.com/e-letter/e-letter-desktop.git
 cd e-letter-desktop
+
+# Open solution in Visual Studio
 start e-letter.sln
 # Build > Build Solution (Ctrl+Shift+B)
 # Debug > Start Debugging (F5)
 ```
 
-### Desktop Tech Stack
+**Terminal 1** — Start Go backend (from `backend/` folder):
 
-- **Platform**: Windows Desktop (.NET Framework 4.7.2)
-- **Language**: C# 10.0
-- **UI Framework**: WPF (Windows Presentation Foundation)
-- **UI Library**: WPF-UI 4.1
-- **Serialization**: Newtonsoft.Json 13.0.4
-- **Data Format**: JSON with local storage
+```bash
+go run cmd/api/main.go
+```
 
 ### Desktop Supported Views
 
@@ -147,17 +160,13 @@ start e-letter.sln
 - Check-in System - Student and teacher attendance tracking
 - Dispensation Management - Special permission handling
 
-👉 [View Desktop Project](https://github.com/e-letter/e-letter-desktop) | [Documentation](https://github.com/e-letter/e-letter-desktop#readme)
+👉 [View Desktop Project](https://github.com/e-letter/e-letter-desktop) | [Full Documentation](https://github.com/e-letter/e-letter-desktop#readme)
 
 ---
 
 ## 📱 Mobile Application
 
-A powerful Android application for managing school permission letters with native mobile interface and seamless user experience.
-
-[![Android](https://img.shields.io/badge/Android-8+-3DDC84?logo=android)](https://www.android.com/)
-[![Java](https://img.shields.io/badge/Java-17+-007396?logo=java)](https://www.oracle.com/java/)
-[![Material Design](https://img.shields.io/badge/Material%20Design-3-757575?logo=material-design)](https://material.io/)
+A powerful Android application for managing school permission letters with native mobile interface and seamless user experience. Built with Kotlin and Android Jetpack with Material Design 3.
 
 ### Mobile Features
 
@@ -165,29 +174,31 @@ A powerful Android application for managing school permission letters with nativ
 - **Role-Based Access** - Student App and Teacher App with different dashboards
 - **Permission Management** - Create, submit, and track letters on-the-go
 - **Real-Time Notifications** - Push notifications for approval status updates
-- **Offline Support** - Basic functionality available without internet
-- **Biometric Authentication** - Support for fingerprint and face recognition
+- **Offline Support** - Basic functionality available without internet (Room DB pending)
+- **Biometric Authentication** - Support for fingerprint and face recognition (pending)
 - **Letter Tracking** - Track submitted letters with real-time status
 - **Responsive Design** - Perfect display on phones and tablets
+
+### Mobile Tech Stack
+
+| Component        | Technology                          |
+| ---------------- | ----------------------------------- |
+| **Platform**     | Android 8+ (minSdk 24)              |
+| **Language**     | Kotlin 2.0                          |
+| **UI Framework** | Android Jetpack + Material Design 3 |
+| **Database**     | Room Database (local persistence)   |
+| **Networking**   | Retrofit 2 + OkHttp for API calls   |
+| **Auth**         | JWT with SharedPreferences          |
+| **Logging**      | HttpLoggingInterceptor (HTTP debug) |
 
 ### Mobile Quick Start
 
 ```bash
 git clone https://github.com/e-letter/e-letter-android.git
 cd e-letter-android
-start .
-# File > Sync Now
-# Run > Run 'app'
+# Open in Android Studio
+# File > Sync Now > Run > Run 'app'
 ```
-
-### Mobile Tech Stack
-
-- **Platform**: Android 8+
-- **Language**: Java 17+
-- **UI Framework**: Android Jetpack with Material Design 3
-- **Database**: Room Database (local persistence)
-- **Networking**: Retrofit2 for API communication
-- **Authentication**: JWT with SharedPreferences
 
 ### Mobile Key Screens
 
@@ -199,7 +210,7 @@ start .
 - Profile Management - User profile and settings
 - Notifications - Real-time approval updates
 
-👉 [View Mobile Project](https://github.com/e-letter/e-letter-android) | [Documentation](https://github.com/e-letter/e-letter-android#readme)
+👉 [View Mobile Project](https://github.com/e-letter/e-letter-android) | [Full Documentation](https://github.com/e-letter/e-letter-android#readme)
 
 ---
 
@@ -209,15 +220,15 @@ start .
 
 ```text
 Register/Login
-    ↓
+     ↓
 Select Permission Type
-    ↓
+     ↓
 Fill Permission Form
-    ↓
+     ↓
 Submit Request
-    ↓
+     ↓
 Track Approval Status
-    ↓
+     ↓
 Receive Approval/Rejection
 ```
 
@@ -227,15 +238,15 @@ Receive Approval/Rejection
 
 ```text
 Login
-    ↓
+     ↓
 View Pending Requests
-    ↓
+     ↓
 Review Student Information
-    ↓
+     ↓
 Approve/Reject/Request Info
-    ↓
+     ↓
 Add Comments & Signatures
-    ↓
+     ↓
 Notify Student of Decision
 ```
 
@@ -245,15 +256,15 @@ Notify Student of Decision
 
 ```text
 Login
-    ↓
+     ↓
 Manage Users
-    ↓
+     ↓
 Configure Workflows
-    ↓
+     ↓
 View System Reports
-    ↓
+     ↓
 Monitor Audit Logs
-    ↓
+     ↓
 Maintain Settings
 ```
 
@@ -266,7 +277,7 @@ Maintain Settings
 ### Common Security Features
 
 - **Role-Based Access Control** - Fine-grained permission management
-- **Secure Password Storage** - bcryptjs hashing (Web), secure storage (Desktop/Mobile)
+- **Secure Password Storage** - bcrypt hashing (Web/Backend), secure storage (Desktop/Mobile)
 - **Session Management** - Secure session creation and tracking
 - **Audit Logging** - Complete history of all actions
 - **Token-Based Authentication** - JWT for web, session tokens for desktop/mobile
@@ -275,11 +286,12 @@ Maintain Settings
 
 | Feature               | Web | Desktop | Mobile |
 | --------------------- | --- | ------- | ------ |
-| JWT Authentication    | ✅  | ✅       | -      |
+| JWT Authentication    | ✅  | ✅      | ✅     |
 | Refresh Tokens        | ✅  | ✅      | -      |
-| Local Session Storage | ✅  | ✅      | -      |
+| Local Session Storage | ✅  | ✅      | ✅     |
 | HTTPS Only            | ✅  | -       | -      |
 | Encrypted Preferences | -   | -       | -      |
+| Biometric Auth        | -   | -       | 🔜     |
 
 ### User Role Hierarchy
 
@@ -290,7 +302,7 @@ ADMIN
 └── View all reports
 
 KEPSEK (Principal)
-├── Final approval authority
+├── Override approval authority
 ├── View institution statistics
 └── Override approval stages
 
@@ -309,6 +321,17 @@ SISWA (Student)
 ├── Track request status
 └── View approval comments
 ```
+
+### Sub-Roles for Teachers
+
+Guru dapat memiliki beberapa sub-role yang menentukan cakupan persetujuan:
+
+| Peran          | Deskripsi               | Cakupan Persetujuan       |
+| -------------- | ----------------------- | ------------------------- |
+| **Wali Kelas** | Guru kelas              | Siswa kelasnya sendiri    |
+| **Kapro**      | Kepala program keahlian | Siswa di jurusannya       |
+| **Tatib**      | Guru tata tertib        | Semua siswa (tahap akhir) |
+| **Guru Mapel** | Guru mata pelajaran     | Siswa di jadwalnya        |
 
 ---
 
@@ -329,22 +352,139 @@ SISWA (Student)
 
 ---
 
+## 🗄️ Database Architecture
+
+### Backend Database (MariaDB)
+
+Shared by Web and Desktop clients via Go API. Organized into **6 logical sections**:
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│            1. TABEL REFERENSI UTAMA                         │
+│  (ref_values, academic_years, majors, classes, subjects)    │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│            2. TABEL MANAJEMEN PENGGUNA                      │
+│  (users, student_profiles, teacher_profiles, principals)    │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│        3. TABEL ORGANISASI AKADEMIK                         │
+│  (teacher_roles, class_assignments, schedules)              │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│       4. TABEL SISTEM PERMOHONAN & PERSETUJUAN              │
+│  (requests, request_approvals, approval_flow_templates)     │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│            5. TABEL PENDUKUNG                               │
+│  (attachments, notifications, letter_counters)              │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│         6. TABEL AUDIT & KEAMANAN                           │
+│  (jwt_tokens, audit_logs, password_reset_tokens)            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Key Tables
+
+| Table                     | Purpose                             | Key Fields                                    |
+| ------------------------- | ----------------------------------- | --------------------------------------------- |
+| `users`                   | User accounts                       | `id`, `username/email`, `role`, `status`      |
+| `student_profiles`        | Student profile data                | `user_id`, `student_code` (NISN), `signature` |
+| `teacher_profiles`        | Teacher profile data                | `user_id`, `employee_code` (NIP), `signature` |
+| `teacher_roles`           | Teacher sub-roles per academic year | `teacher_id`, `role_name`, `status`           |
+| `requests`                | Permission letter requests          | `request_number`, `type_id`, `status`         |
+| `request_approvals`       | Approval workflow steps             | `request_id`, `step_no`, `approver_role`      |
+| `approval_flow_templates` | Configurable approval templates     | `type_id`, `step_no`, `approver_role`         |
+| `jwt_tokens`              | JWT token storage & revocation      | `user_id`, `token_hash`, `is_revoked`         |
+
+### Client-Side Cache (SQLite — Desktop & Mobile)
+
+| Table           | Purpose                                      |
+| --------------- | -------------------------------------------- |
+| `local_letters` | Letters created offline (pending sync)       |
+| `sync_queue`    | Operation queue for deferred synchronization |
+| `cached_users`  | Cached reference/master data                 |
+
+---
+
+## 🔌 API Reference
+
+### Base URL
+
+```text
+http://localhost:8080/api/v1
+```
+
+### Authentication Endpoints
+
+| Endpoint        | Method | Description          |
+| --------------- | ------ | -------------------- |
+| `/auth/login`   | POST   | User login           |
+| `/auth/logout`  | POST   | User logout          |
+| `/auth/refresh` | POST   | Refresh access token |
+| `/register`     | POST   | Register with token  |
+
+### User Endpoints
+
+| Endpoint        | Method | Description         |
+| --------------- | ------ | ------------------- |
+| `/user/profile` | GET    | Get user profile    |
+| `/user/update`  | POST   | Update user profile |
+
+### Permission Request Endpoints
+
+| Endpoint               | Method | Description               |
+| ---------------------- | ------ | ------------------------- |
+| `/permission-requests` | GET    | List permission requests  |
+| `/permission-requests` | POST   | Create permission request |
+| `/permission-requests` | PUT    | Update permission request |
+| `/permission-requests` | DELETE | Delete permission request |
+| `/approve`             | POST   | Approve/reject request    |
+
+### Letter Endpoints
+
+| Endpoint                       | Method | Description             |
+| ------------------------------ | ------ | ----------------------- |
+| `/letters/student/create`      | POST   | Create student letter   |
+| `/letters/teacher/create`      | POST   | Create teacher letter   |
+| `/letters/student/izin-masuk`  | GET    | Get izin masuk letters  |
+| `/letters/student/izin-keluar` | GET    | Get izin keluar letters |
+| `/letters/student/dispensasi`  | GET    | Get dispensasi letters  |
+
+### Client Credentials (Development)
+
+| Role        | Email      | Password | Dashboard         |
+| ----------- | ---------- | -------- | ----------------- |
+| **Student** | `123`      | `12345`  | Student Dashboard |
+| **Teacher** | `G123`     | `12345`  | Teacher Dashboard |
+| **Admin**   | `admin123` | `12345`  | Admin Panel       |
+
+---
+
 ## 🎨 Design System
 
-All platforms follow a consistent, modern design language.
+All platforms follow a consistent, modern design language with gradient themes and glassmorphism effects.
 
 ### Color Palette
 
-| Permission Type    | Primary Color | Gradient            |
-| ------------------ | ------------- | ------------------- |
-| Entry (Izin Masuk) | Purple        | `#C471ED → #F64F59` |
-| Exit (Izin Keluar) | Orange        | `#FDC830 → #F37335` |
-| Dispensation       | Blue          | `#2193b0 → #6dd5ed` |
+| Type             | Primary Color | Gradient            |
+| ---------------- | ------------- | ------------------- |
+| Entry/Izin Masuk | Purple        | `#C471ED → #F64F59` |
+| Exit/Izin Keluar | Orange        | `#FDC830 → #F37335` |
+| Dispensation     | Blue          | `#2193b0 → #6dd5ed` |
 
 ### Typography
 
-- **Body Text**: Nunito (Web), System (Desktop/Mobile)
-- **Headings**: Quicksand (Web), Segoe UI (Desktop), Roboto (Mobile)
+| Context       | Web       | Desktop  | Mobile |
+| ------------- | --------- | -------- | ------ |
+| **Body Text** | Nunito    | System   | Roboto |
+| **Headings**  | Quicksand | Segoe UI | Roboto |
 
 ### Component Patterns
 
@@ -355,121 +495,86 @@ All platforms follow a consistent, modern design language.
 
 ---
 
-## 📚 Getting Started
+## 🛠️ Development Setup
 
-### Choose Your Platform
+### Environment Variables (Web)
 
-**🌐 Building the Web App?**
+```env
+# Database
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=eletter_user
+DB_PASSWORD=your_password
+DB_NAME=db_eletter
 
-Go to [e-letter-web](https://github.com/e-letter/e-letter-web)
+# JWT Secrets
+JWT_ACCESS_SECRET=your_access_secret
+JWT_REFRESH_SECRET=your_refresh_secret
 
-- Tech: Next.js 16, TypeScript, Tailwind CSS, MariaDB
-- [Quick Start Guide](https://github.com/e-letter/e-letter-web#readme)
-
-**🖥️ Building the Desktop App?**
-
-Go to [e-letter-desktop](https://github.com/e-letter/e-letter-desktop)
-
-- Tech: .NET 4.7.2, C#, WPF
-- [Quick Start Guide](https://github.com/e-letter/e-letter-desktop#readme)
-
-**📱 Building the Mobile App?**
-
-Go to [e-letter-android](https://github.com/e-letter/e-letter-android)
-
-- Tech: Android, Java, Material Design 3
-- [Quick Start Guide](https://github.com/e-letter/e-letter-android#readme)
-
-### Development Workflow
-
-1. Choose a repository above
-2. Clone the repository
-3. Install dependencies
-4. Configure environment
-5. Run development server
-6. Start contributing!
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome across all platforms! Please follow these guidelines:
-
-1. Fork the repository of your choice
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Make your changes following code style guidelines
-4. Test thoroughly on your target platform
-5. Commit with clear, descriptive messages
-6. Push to your fork
-7. Open a Pull Request
-
-### Code Style Guidelines
-
-#### TypeScript/React (Web)
-
-- Use TypeScript for type safety
-- Follow existing component patterns
-- Use Tailwind CSS utilities
-- Add comments for complex logic
-
-#### C# (Desktop)
-
-- Use PascalCase for classes and methods
-- Keep methods small and focused
-- Add meaningful comments
-- Follow existing UI patterns
-
-#### Java (Mobile)
-
-- Use consistent naming conventions
-- Add proper error handling
-- Follow Material Design principles
-- Document complex logic
-
----
-
-## 📄 License
-
-**Proprietary License** - All Rights Reserved
-
-All E-Letter repositories are available for:
-
-- ✅ Viewing and educational purposes
-- ✅ Contributing via Pull Requests
-- ✅ Internal organizational use
-
-Prohibited without explicit permission:
-
-- ❌ Redistribution
-- ❌ Creating derivative works
-- ❌ Commercial use
-- ❌ Removing copyright notices
-
----
-
-## 🏢 Organization Structure
-
-```text
-E-Letter Organization
-│
-├── 🌐 e-letter-web (Website)
-│   ├── Next.js 16 + TypeScript
-│   ├── Tailwind CSS + shadcn/ui
-│   ├── MariaDB Database
-│   └── Docker Deployment
-│
-├── 🖥️ e-letter-desktop (Windows)
-│   ├── .NET Framework 4.7.2
-│   ├── C# with WPF-UI
-│   ├── Local JSON Storage
-│   └── Windows Native
-│
-└── 📱 e-letter-android (Mobile)
-    ├── Android 11+ (Java)
-    ├── Material Design 3
-    ├── Room Database
-    └── Mobile Optimized
+# Application
+NODE_ENV=development
+APP_ENV=development
+APP_PORT=8080
 ```
+
+### Environment Variables (Desktop — `App.config`)
+
+```xml
+<appSettings>
+  <add key="ApiBaseUrl" value="http://localhost:8080/api/v1" />
+  <add key="TimeoutSeconds" value="30" />
+  <add key="EnableOfflineMode" value="true" />
+  <add key="MaxRetryAttempts" value="3" />
+</appSettings>
+```
+
+### Environment Variables (Backend Go — `.env`)
+
+```env
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=eletter_user
+DB_PASSWORD=your_password
+DB_NAME=db_eletter
+JWT_ACCESS_SECRET=your_access_secret
+JWT_REFRESH_SECRET=your_refresh_secret
+```
+
+---
+
+## 📱 Mobile Setup Details
+
+### Prasyarat
+
+- **Android Studio** (Arctic Fox atau lebih baru)
+- **JDK 11** atau lebih baru
+- **Android SDK** API Level 24 (minSdk 24) — Android 7.0+
+- **Kotlin** 2.0.21
+- **Server Backend** berjalan di `http://192.168.1.6:3000/`
+
+### Konfigurasi API Base URL
+
+Ubah `BASE_URL` di `RetrofitClient.kt`:
+
+```kotlin
+private const val BASE_URL = "http://192.168.1.6:3000/"
+```
+
+### Menjalankan Build
+
+```bash
+# Build dan install
+./gradlew installDebug
+# Atau melalui Android Studio: Build > Run 'app'
+```
+
+---
+
+## 📞 Support & Links
+
+[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-desktop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
+
+[Report Bug](https://github.com/e-letter/e-letter-web/issues) · [Request Feature](https://github.com/e-letter/e-letter-web/issues) · [Discussions](https://github.com/e-letter/e-letter-web/discussions)
 
 ---
 
@@ -504,11 +609,67 @@ E-Letter Organization
 
 ---
 
-## 📞 Support & Links
+## 📄 License
 
-[🌐 Web App](https://github.com/e-letter/e-letter-web) · [🖥️ Desktop App](https://github.com/e-letter/e-letter-desktop) · [📱 Mobile App](https://github.com/e-letter/e-letter-android)
+**Proprietary License** - All Rights Reserved
 
-[Report Bug](https://github.com/e-letter/e-letter-web/issues) · [Request Feature](https://github.com/e-letter/e-letter-web/issues) · [Discussions](https://github.com/e-letter/e-letter-web/discussions)
+All E-Letter repositories are available for:
+
+- ✅ Viewing and educational purposes
+- ✅ Contributing via Pull Requests
+- ✅ Internal organizational use
+
+Prohibited without explicit permission:
+
+- ❌ Redistribution
+- ❌ Creating derivative works
+- ❌ Commercial use
+- ❌ Removing copyright notices
+
+---
+
+## 🏢 Organization Structure
+
+```text
+E-Letter Organization
+│
+├── 🌐 e-letter-web (Website)
+│   ├── Next.js 16 + TypeScript
+│   ├── Tailwind CSS 4 + shadcn/ui
+│   ├── Framer Motion (Animations)
+│   ├── MariaDB 11.5 Database
+│   ├── Go 1.22 + Gin Backend API
+│   └── Docker & Docker Compose
+│
+├── 🖥️ e-letter-desktop (Windows)
+│   ├── .NET Framework 4.7.2 + WPF
+│   ├── WPF-UI 4.2.1 (Fluent Design)
+│   ├── MVVM Architecture
+│   ├── Newtonsoft.Json 13.0.4
+│   ├── SQLite (Offline Cache)
+│   └── Windows Toast Notifications
+│
+└── 📱 e-letter-android (Mobile)
+    ├── Android 14+ / Kotlin 2.0
+    ├── Material Design 3
+    ├── Android Jetpack Framework
+    ├── Retrofit 2 + OkHttp
+    ├── Room Database (pending)
+    └── Biometric Auth (pending)
+```
+
+---
+
+## 🚀 Future Roadmap
+
+- [ ] **Mobile offline mode** — Room Database caching for Android
+- [ ] **Push notifications** — Firebase Cloud Messaging integration
+- [ ] **Biometric authentication** — Fingerprint & face recognition (Mobile)
+- [ ] **Photo/document attachments** — Camera/gallery integration (Mobile)
+- [ ] **PDF generation & download** — Approved letter export
+- [ ] **Multi-language support** — Internationalization (i18n)
+- [ ] **Dark theme toggle** — Explicit dark/light mode switch (Mobile)
+- [ ] **Jetpack Compose migration** — Modern UI toolkit for Android
 
 ---
 
